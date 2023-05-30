@@ -49,10 +49,11 @@ If mulitple occupancy for atom/residue exists, then the highest coordinate with 
 
 
 **Ligand alignment**: Align all ligands to reference structures (default: ligand from minimized complex structure) using `Ligand Alignment` module in Maestro
-- Constraint common substructure: Largest common Benis-Murcko scaffold
+- Constraint common substructure: MCS
 - Sampling method: Thorough
 - Maximum number of conformers: 1000
 - Nonbonded close contact distance: 0.5 Angstroms
+- Run minimization for each conformer
 
 
 **Fine-tune ligand poses**
