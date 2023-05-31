@@ -9,3 +9,6 @@ Summary of the contents of the Protein-Ligand Benchmark Dataset. It contains the
 | Target    |  PDB |# Ligands| # Edges |
 | --------- |:----:|--------:|--------:|
 | tyk2      | 4GIH | 13      | 12      |
+| mcl1      | 4HW3 | 25      | 24      |
+| cdk2      | 1H1Q | 9       | 10      |
+| ptp1b     | 2QBS | 21      | 22      |

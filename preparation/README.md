@@ -2,7 +2,7 @@
 Maestro from Schrodinger2022-2 was used to generate and prepare the initial structures of protein and the ligand.
 
 
-### Protein preparation: Protein preparation wizard
+### 1. Protein preparation: Protein preparation wizard
 **Import and Process**
 - Assign bond orders (Use CCD database)
 - Add hydrogens
@@ -33,9 +33,9 @@ If mulitple occupancy for atom/residue exists, then the highest coordinate with 
 - Force field: OPLS4
 
 **Split moleucles**: Split minizmized complex structure into protein, ligands, water, and others using Maestro
-- Export protein structure as `target.pdb`
+- Export protein structure as `protein.pdb`
 
-### Ligand preparation
+### 2. Ligand preparation
 **LigPrep**: Load ligand file and generate possible ionization/tautomer states using ligprep (default setting)
 - Force field: OPLS4
 - Generate possible states at target pH: 7.0+/-2.0 using Epik
@@ -49,18 +49,19 @@ If mulitple occupancy for atom/residue exists, then the highest coordinate with 
 
 
 **Ligand alignment**: Align all ligands to reference structures (default: ligand from minimized complex structure) using `Ligand Alignment` module in Maestro
-- Constraint common substructure: MCS
+- Constraint common substructure: Largest common Bemis-Murcko scaffold or MCS (choose the one that best aligns)
 - Sampling method: Thorough
 - Maximum number of conformers: 1000
 - Nonbonded close contact distance: 0.5 Angstroms
-- Run minimization for each conformer
+- Run energy minimization for each conformer
 
 
 **Fine-tune ligand poses**
-Fine-tune and modify ligand orienations or substituent torsions if necessary and export ligands as `ligands.sdf`
+- Manually modify ligand (e.g. orienations or substituent torsions) if necessary.
+- If atoms are modified, run `Minimize Selected Atoms` and export ligands as `ligands.sdf`
 
 
-### Mapping network
+### 3. Mapping network
 Ligand transformation network is define manually by human experts where transformations are grouped into categories to resemble different SAR purposes.
 
 
