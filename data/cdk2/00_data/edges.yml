@@ -1,0 +1,37 @@
+edges:
+  edge_lig_1h1q_lig_20:
+    ligand_a: lig_1h1q
+    ligand_b: lig_20
+    name: edge_lig_1h1q_lig_20
+  edge_lig_1h1q_lig_1oi9:
+    ligand_a: lig_1h1q
+    ligand_b: lig_1oi9
+    name: edge_lig_1h1q_lig_1oi9
+  edge_lig_1h1q_lig_26:
+    ligand_a: lig_1h1q
+    ligand_b: lig_26
+    name: edge_lig_1h1q_lig_26
+  edge_lig_1h1q_lig_1oiu:
+    ligand_a: lig_1h1q
+    ligand_b: lig_1oiu
+    name: edge_lig_1h1q_lig_1oiu
+  edge_lig_1h1q_lig_21:
+    ligand_a: lig_1h1q
+    ligand_b: lig_21
+    name: edge_lig_1h1q_lig_21
+  edge_lig_1h1q_lig_22:
+    ligand_a: lig_1h1q
+    ligand_b: lig_22
+    name: edge_lig_1h1q_lig_22
+  edge_lig_1h1q_lig_1h1r:
+    ligand_a: lig_1h1q
+    ligand_b: lig_1h1r
+    name: edge_lig_1h1_lig_1h1r
+  edge_lig_1h1q_lig_17:
+    ligand_a: lig_1h1q
+    ligand_b: lig_17
+    name: edge_lig_1h1q_lig_17
+  edge_lig_1h1q_lig_1oiy:
+    ligand_a: lig_1h1q
+    ligand_b: lig_1oiy
+    name: edge_lig_1h1q_lig_1oiy
