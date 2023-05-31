@@ -1,0 +1,78 @@
+edges:
+  # Group 1
+  edge_lig_27_lig_28:
+    ligand_a: lig_27
+    ligand_b: lig_28
+  edge_lig_27_lig_30:
+    ligand_a: lig_27
+    ligand_b: lig_30
+  edge_lig_27_lig_31:
+    ligand_a: lig_27
+    ligand_b: lig_31
+  edge_lig_27_lig_32:
+    ligand_a: lig_27
+    ligand_b: lig_32
+  edge_lig_27_lig_33:
+    ligand_a: lig_27
+    ligand_b: lig_33
+  edge_lig_27_lig_34:
+    ligand_a: lig_27
+    ligand_b: lig_34
+  edge_lig_27_lig_35:
+    ligand_a: lig_27
+    ligand_b: lig_35
+  edge_lig_27_lig_36:
+    ligand_a: lig_27
+    ligand_b: lig_36
+  edge_lig_27_lig_37:
+    ligand_a: lig_27
+    ligand_b: lig_37
+  # Group 2
+  edge_lig_27_lig_43:
+    ligand_a: lig_27
+    ligand_b: lig_43
+  edge_lig_27_lig_46:
+    ligand_a: lig_27
+    ligand_b: lig_46
+  edge_lig_27_lig_47:
+    ligand_a: lig_27
+    ligand_b: lig_47
+  edge_lig_27_lig_48:
+    ligand_a: lig_27
+    ligand_b: lig_48
+  # Group 3
+  edge_lig_37_lig_50:
+    ligand_a: lig_37
+    ligand_b: lig_50
+  edge_lig_37_lig_53:
+    ligand_a: lig_37
+    ligand_b: lig_53
+  edge_lig_37_lig_56:
+    ligand_a: lig_37
+    ligand_b: lig_56
+  edge_lig_37_lig_58:
+    ligand_a: lig_37
+    ligand_b: lig_58
+  edge_lig_37_lig_49:
+    ligand_a: lig_37
+    ligand_b: lig_49
+  edge_lig_37_lig_52:
+    ligand_a: lig_37
+    ligand_b: lig_52
+  # Group 4
+  edge_lig_37_lig_60:
+    ligand_a: lig_37
+    ligand_b: lig_60
+  edge_lig_37_lig_67:
+    ligand_a: lig_37
+    ligand_b: lig_67
+  # Group 5
+  edge_lig_60_lig_61:
+    ligand_a: lig_60
+    ligand_b: lig_61
+  edge_lig_60_lig_63:
+    ligand_a: lig_60
+    ligand_b: lig_63
+  edge_lig_60_lig_65:
+    ligand_a: lig_60
+    ligand_b: lig_65
