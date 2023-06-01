@@ -33,7 +33,7 @@ If mulitple occupancy for atom/residue exists, then the highest coordinate with 
 - Force field: OPLS4
 
 **Split moleucles**: Split minizmized complex structure into protein, ligands, water, and others using Maestro
-- Export protein structure as `protein.pdb`
+- Export protein structure as `protein.pdb`. Preserve x-ray water molecules if necessarily.
 
 ### 2. Ligand preparation
 **LigPrep**: Load ligand file and generate possible ionization/tautomer states using ligprep (default setting)
