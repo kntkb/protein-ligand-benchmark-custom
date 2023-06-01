@@ -30,7 +30,7 @@ edges:
   edge_lig_27_lig_37:
     ligand_a: lig_27
     ligand_b: lig_37
-  # Group2: R-group (search for fuzed rings)
+  # Group2: R-group (search for fused rings)
   edge_lig_27_lig_43:
     ligand_a: lig_27
     ligand_b: lig_43
