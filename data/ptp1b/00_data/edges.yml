@@ -1,3 +1,6 @@
+meta:
+  target: ptp1b
+  planner: custom edges created by Ken Takaba
 edges:
   # Group1: -NH linker
   edge_lig_23466_lig_23467:
@@ -20,7 +23,7 @@ edges:
     ligand_a: lig_23466
     ligand_b: lig_20670_2qbs
     name: edge_lig_23466_lig_20670_2qbs
-  # Group2: amide linker
+  # Group2: Amide linker
   edge_lig_23466_lig_23468:
     ligand_a: lig_23466
     ligand_b: lig_23468
@@ -75,7 +78,7 @@ edges:
     ligand_a: lig_20670_2qbs
     ligand_b: lig_23484
     name: edge_lig_20669_2qbs_lig_23484
-  # Group 5: halogen shuffling on scaffold
+  # Group5: Halogen shuffling on scaffold
   edge_lig_23484_lig_23485:
     ligand_a: lig_23484
     ligand_b: lig_23485

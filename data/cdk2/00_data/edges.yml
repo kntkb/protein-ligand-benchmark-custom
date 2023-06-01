@@ -1,4 +1,8 @@
+meta:
+  target: cdk2
+  planner: custom edges created by Ken Takaba
 edges:
+  # Group1:
   edge_lig_1h1q_lig_20:
     ligand_a: lig_1h1q
     ligand_b: lig_20
