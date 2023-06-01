@@ -1,5 +1,5 @@
 # Free Energy Benchmark Systems for Small molecules
-A set of benchmark systems to validate Espaloma. This repository was obtained from [OpenFF protein-ligand-benchmark](https://github.com/openforcefield/protein-ligand-benchmark/tree/main) repository (May 29th 2023)
+A set of benchmark systems to validate `Espaloma` force field. This repository was obtained from [OpenFF protein-ligand-benchmark](https://github.com/openforcefield/protein-ligand-benchmark/tree/main) repository (commit hash: d3387602bbeb0167abf00dfb81753d8936775dd2)
 
 
 
@@ -10,5 +10,6 @@ Summary of the contents of the Protein-Ligand Benchmark Dataset. It contains the
 | --------- |:----:|--------:|--------:|
 | tyk2      | 4GIH | 13      | 12      |
 | mcl1      | 4HW3 | 25      | 24      |
-| cdk2      | 1H1Q | 9       | 10      |
-| ptp1b     | 2QBS | 21      | 22      |
+| cdk2      | 1H1Q | 10      | 9       |
+| ptp1b     | 2QBS | 22      | 21      |
+| p38       | 3FLY | 28      | 27      |
