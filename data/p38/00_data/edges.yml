@@ -1,0 +1,131 @@
+meta:
+  target: p38
+  planner: custom edges created by Ken Takaba
+edges:
+  # Group1: R1-group (solvent region)
+  edge_lig_p38a_2v_lig_p38a_3fly:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_3fly
+    name: edge_lig_p38a_2v_lig_p38a_3fly
+  edge_lig_p38a_2v_lig_p38a_3flw:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_3flw
+    name: edge_lig_p38a_2v_lig_p38a_3flw
+  edge_lig_p38a_2v_lig_p38a_3fmh:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_3fmh
+    name: edge_lig_p38a_2v_lig_p38a_3fmh
+  edge_lig_p38a_2v_lig_p38a_3fln:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_3fln
+    name: edge_lig_p38a_2v_lig_p38a_3fln
+  edge_lig_p38a_2v_lig_p38a_2x:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_2x
+    name: edge_lig_p38a_2v_lig_p38a_2x
+  edge_lig_p38a_2v_lig_p38a_2aa:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_2aa
+    name: edge_lig_p38a_2v_lig_p38a_2aa
+  edge_lig_p38a_2v_lig_p38a_2g:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_2g
+    name: edge_lig_p38a_2v_lig_p38a_2g
+  edge_lig_p38a_2v_lig_p38a_2bb:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_2bb
+    name: edge_lig_p38a_2v_lig_p38a_2bb
+  edge_lig_p38a_2v_lig_p38a_2y:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_2y
+    name: edge_lig_p38a_2v_lig_p38a_2y
+  edge_lig_p38a_2v_lig_p38a_2gg:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_2gg
+    name: edge_lig_p38a_2v_lig_p38a_2gg
+  edge_lig_p38a_2v_lig_p38a_2ee:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_2ee
+    name: edge_lig_p38a_2v_lig_p38a_2ee
+  edge_lig_p38a_2v_lig_p38a_2z:
+    ligand_a: lig_p38a_2v
+    ligand_b: lig_p38a_2z
+    name: edge_lig_p38a_2v_lig_p38a_2z
+  # Group2: R2-group (under P-loop)
+  edge_lig_p38a_3fln_lig_p38a_2r:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2r
+    name: lig_p38a_3fln_lig_p38a_2r
+  edge_lig_p38a_3fln_lig_p38a_2s:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2s
+    name: lig_p38a_3fln_lig_p38a_2s
+  edge_lig_p38a_3fln_lig_p38a_2n:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2n
+    name: lig_p38a_3fln_lig_p38a_2n
+  edge_lig_p38a_3fln_lig_p38a_2t:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2t
+    name: lig_p38a_3fln_lig_p38a_2t
+  edge_lig_p38a_3fln_lig_p38a_2l:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2l
+    name: lig_p38a_3fln_lig_p38a_2l
+  edge_lig_p38a_3fln_lig_p38a_2k:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2k
+    name: lig_p38a_3fln_lig_p38a_2k
+  edge_lig_p38a_3fln_lig_p38a_2m:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2m
+    name: lig_p38a_3fln_lig_p38a_2m
+  edge_lig_p38a_3fln_lig_p38a_2o:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2o
+    name: lig_p38a_3fln_lig_p38a_2o
+  edge_lig_p38a_3fln_lig_p38a_2p:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2p
+    name: lig_p38a_3fln_lig_p38a_2p
+  # Group3: R3-group (back pocket)
+  edge_lig_p38a_3fln_lig_p38a_2e:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2e
+    name: lig_p38a_3fln_lig_p38a_2e
+  edge_lig_p38a_3fln_lig_p38a_2f:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2f
+    name: lig_p38a_3fln_lig_p38a_2f
+  edge_lig_p38a_3fln_lig_p38a_2h:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2h
+    name: lig_p38a_3fln_lig_p38a_2h
+  edge_lig_p38a_3fln_lig_p38a_2i:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2i
+    name: lig_p38a_3fln_lig_p38a_2i
+  edge_lig_p38a_3fln_lig_p38a_2j:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_2j
+    name: lig_p38a_3fln_lig_p38a_2j
+  edge_lig_p38a_3fln_lig_p38a_3flz:
+    ligand_a: lig_p38a_3fln
+    ligand_b: lig_p38a_3flz
+    name: lig_p38a_3fln_lig_p38a_3flz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
