@@ -54,11 +54,12 @@ If mulitple occupancy for atom/residue exists, then the highest coordinate with 
 - Maximum number of conformers: 1000
 - Nonbonded close contact distance: 0.5 Angstroms
 - Run energy minimization for each conformer
+- Export aligned ligand poses as `ligands_raw.sdf` and the reference ligand pose used for alignment as `ligand_ref.sdf`.
 
 
 **Fine-tune ligand poses**
-- Manually modify ligand (e.g. orienations or substituent torsions) if necessary.
-- If atoms are modified, run `Minimize Selected Atoms` and export ligands as `ligands.sdf`
+- Manually modify ligands if necessary to relieve severe atom clashes or fix wierd bond distances.
+- Export final ligands as `ligands.sdf`. 
 
 
 ### 3. Mapping network
