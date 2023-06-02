@@ -22,8 +22,6 @@ from perses.utils.url_utils import fetch_url_contents
 
 from simtk import unit
 
-#from openff.arsenic import plotting, wrangle
-#from arsenic import plotting, wrangle
 from cinnabar import plotting, wrangle
 
 # global variables
@@ -113,7 +111,7 @@ def get_ligands_information(ligands_file="ligands.sdf"):
     return ligands_dict
 
 
-def to_arsenic_csv(experimental_data: dict, simulation_data: list, out_csv: str = 'out_benchmark.csv',
+def to_cinnabar_csv(experimental_data: dict, simulation_data: list, out_csv: str = 'out_benchmark.csv',
                    ligands_file="ligands.sdf"):
     """
     Generates a csv file to be used with openff-arsenic. Energy units in kcal/mol.
@@ -176,22 +174,27 @@ def to_arsenic_csv(experimental_data: dict, simulation_data: list, out_csv: str 
             csv_file.write(f"{ligand_name}, {expt_DG}, {expt_dDG}\n")
 
         # Calculated block
-        # print header for block
         csv_file.write("# Calculated block\n")
-        csv_file.write("# Ligand1,Ligand2, calc_DDG, calc_dDDG(MBAR), calc_dDDG(additional)\n")
-        # Loop through simulation, extract ligand1 and ligand2 indices, convert to names, create string with
-        # ligand1, ligand2, calc_DDG, calc_dDDG(MBAR), calc_dDDG(additional)
-        # write string in csv file
+        csv_file.write("# Ligand1(OLD),Ligand2(NEW), calc_DDG, calc_dDDG(MBAR), calc_dDDG(additional)\n")
         for simulation in simulation_data:
             out_dir = os.path.basename(simulation.directory)
+            """
             # getting integer indices
             ligand1_id, ligand2_id = int(out_dir.split('_')[-1]), int(out_dir.split('_')[-2])  # CHECK ORDER!
-            #ligand1_id, ligand2_id = int(out_dir.split('_')[-2]), int(out_dir.split('_')[-1])  # CHECK ORDER!
             # getting names of ligands
             ligand1, ligand2 = ligands_dict[ligand1_id], ligands_dict[ligand2_id]
             # getting calc_DDG in kcal/mol
             calc_DDG = simulation.bindingdg.value_in_unit(unit.kilocalorie_per_mole)
             # getting calc_dDDG in kcal/mol
+            calc_dDDG = simulation.bindingddg.value_in_unit(unit.kilocalorie_per_mole)
+            csv_file.write(f"{ligand1}, {ligand2}, {calc_DDG}, {calc_dDDG}, 0.0\n")  # hardcoding additional error as 0.0
+            """
+            # getting integer indices
+            ligand1_id, ligand2_id = int(out_dir.split('_')[-2]), int(out_dir.split('_')[-1])  # CHECK ORDER!
+            ligand1, ligand2 = ligands_dict[ligand1_id], ligands_dict[ligand2_id]
+            # Note: simulation.bindingdg is (OLD_LIGAND) - (NEW_LIGAND). Multiple -1 to make it (NEW_LIGAND) - (OLD_LIGAND).
+            # More potent ligands than the original ligand will have DDG < 0.
+            calc_DDG = -1*simulation.bindingdg.value_in_unit(unit.kilocalorie_per_mole)
             calc_dDDG = simulation.bindingddg.value_in_unit(unit.kilocalorie_per_mole)
             csv_file.write(f"{ligand1}, {ligand2}, {calc_DDG}, {calc_dDDG}, 0.0\n")  # hardcoding additional error as 0.0
 
@@ -234,7 +237,6 @@ target_dir = get_target_dir(target, branch=branch)
 ligands_url = f"{base_repo_url}/raw/{branch}/data/{target_dir}/00_data/ligands.yml"
 with urllib.request.urlopen(ligands_url) as response:
     yaml_contents = response.read()
-    print(yaml_contents)
     ligands_experimental_dict = yaml.safe_load(yaml_contents)
 
 # DEBUG
@@ -249,12 +251,15 @@ simulations = get_simulations_data(out_dirs)
 
 # Generate csv file
 csv_path = f'./cinnabar_{target}.csv'
-to_arsenic_csv(ligands_experimental_dict, simulations, out_csv=csv_path)
+to_cinnabar_csv(ligands_experimental_dict, simulations, out_csv=csv_path)
 
 
 # TODO: Separate plotting in a different file
 # Make plots and store
 fe = wrangle.FEMap(csv_path)
+
+import matplotlib.pyplot as plt
+plt.set_loglevel("critical")
 # Relative plot
 plotting.plot_DDGs(fe.graph,
                    target_name=f'{target}',
