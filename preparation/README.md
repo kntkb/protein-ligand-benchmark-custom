@@ -58,7 +58,7 @@ If mulitple occupancy for atom/residue exists, then the highest coordinate with 
 
 
 **Fine-tune ligand poses**
-- Manually modify ligands if necessary to relieve severe atom clashes or fix wierd bond distances.
+- Adjust aligned ligand poses (e.g. rotate torsions, minimized selected atoms) to relieve severe atom clashes and to obtain better initial poses.
 - Export final ligands as `ligands.sdf`. 
 
 
