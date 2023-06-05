@@ -11,5 +11,4 @@ Summary of the contents of the Protein-Ligand Benchmark Dataset. It contains the
 | tyk2      | 4GIH | 13      | 12      |
 | mcl1      | 4HW3 | 25      | 24      |
 | cdk2      | 1H1Q | 10      | 9       |
-| ptp1b     | 2QBS | 22      | 21      |
 | p38       | 3FLY | 28      | 27      |
