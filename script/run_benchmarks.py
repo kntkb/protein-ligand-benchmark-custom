@@ -12,10 +12,13 @@ import argparse
 import logging
 import os
 import yaml
+import sys, shutil
+import datetime
 
 from perses.app.setup_relative_calculation import run
 from perses.utils.url_utils import retrieve_file_url
 from perses.utils.url_utils import fetch_url_contents
+
 
 # Setting logging level config
 LOGLEVEL = os.environ.get("LOGLEVEL", "DEBUG").upper()
@@ -172,6 +175,16 @@ def run_relative_perturbation(lig_a_idx, lig_b_idx, reverse=False, tidy=True):
     """
     _logger.info(f'Starting relative calculation of ligand {lig_a_idx} to {lig_b_idx}')
     trajectory_directory = f'out_{lig_a_idx}_{lig_b_idx}'
+
+    # backup online analysis
+    suffix = datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
+    _out_complex_file = os.path.join(trajectory_directory, 'out-complex_real_time_analysis.yaml')
+    _out_solvent_file = os.path.join(trajectory_directory, 'out-solvent_real_time_analysis.yaml')
+    if os.path.exists(_out_complex_file):
+        shutil.copy(_out_complex_file, f"{_out_complex_file}.{suffix}")
+    if os.path.exists(_out_complex_file):
+        shutil.copy(_out_complex_file, f"{_out_complex_file}.{suffix}")
+
     new_yaml = f'relative_{lig_a_idx}_{lig_b_idx}.yaml'
 
     # read base template yaml file

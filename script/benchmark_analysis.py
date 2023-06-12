@@ -266,8 +266,6 @@ plotting.plot_DDGs(fe.graph,
                    title=f'Relative binding energies - {target}',
                    figsize=5,
                    filename='./plot_relative.png',
-                   #xy_lim=[-3.5, 1.5],
-                   xy_tick_frequency=1
                    )
 # Absolute plot, with experimental data shifted to correct mean
 experimental_mean_dg = np.asarray([node[1]["exp_DG"] for node in fe.graph.nodes(data=True)]).mean()
@@ -277,6 +275,21 @@ plotting.plot_DGs(fe.graph,
                   figsize=5,
                   filename='./plot_absolute.png',
                   shift=experimental_mean_dg,
-                  #xy_lim=[-12.5, -7.5],
-                  xy_tick_frequency=1
+                  )
+
+# Save in SVG format
+plotting.plot_DDGs(fe.graph,
+                   target_name=f'{target}',
+                   title=f'Relative binding energies - {target}',
+                   figsize=5,
+                   filename='./plot_relative.svg',
+                   dpi=600
+                   )
+plotting.plot_DGs(fe.graph,
+                  target_name=f'{target}',
+                  title=f'Absolute binding energies - {target}',
+                  figsize=5,
+                  filename='./plot_absolute.svg',
+                  shift=experimental_mean_dg,
+                  dpi=600
                   )

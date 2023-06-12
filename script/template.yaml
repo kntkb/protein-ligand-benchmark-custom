@@ -56,7 +56,6 @@ checkpoint_interval: 50 # number of iterations
 n_equilibration_iterations: 0
 
 # Number of iterations to run
-#n_cycles: 1
 n_cycles: 5000
 
 # Number of alchemical intermediate states to use
