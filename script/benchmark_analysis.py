@@ -276,20 +276,3 @@ plotting.plot_DGs(fe.graph,
                   filename='./plot_absolute.png',
                   shift=experimental_mean_dg,
                   )
-
-# Save in SVG format
-plotting.plot_DDGs(fe.graph,
-                   target_name=f'{target}',
-                   title=f'Relative binding energies - {target}',
-                   figsize=5,
-                   filename='./plot_relative.svg',
-                   dpi=600
-                   )
-plotting.plot_DGs(fe.graph,
-                  target_name=f'{target}',
-                  title=f'Absolute binding energies - {target}',
-                  figsize=5,
-                  filename='./plot_absolute.svg',
-                  shift=experimental_mean_dg,
-                  dpi=600
-                  )
