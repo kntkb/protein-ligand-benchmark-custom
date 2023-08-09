@@ -1,5 +1,5 @@
 # Free Energy Benchmark Systems for Small molecules
-A set of benchmark systems to validate `Espaloma` force field. This repository was obtained from [OpenFF protein-ligand-benchmark](https://github.com/openforcefield/protein-ligand-benchmark/tree/main) repository (commit hash: d3387602bbeb0167abf00dfb81753d8936775dd2)
+A set of benchmark systems to validate `Espaloma` force field. This repository was obtained from [OpenFF protein-ligand-benchmark](https://github.com/openforcefield/protein-ligand-benchmark/tree/d3387602bbeb0167abf00dfb81753d8936775dd2) repository (commit hash: d3387602bbeb0167abf00dfb81753d8936775dd2)
 
 
 
