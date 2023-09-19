@@ -3,7 +3,7 @@ A set of benchmark systems to validate `Espaloma` force field. This repository w
 
 
 
-### Summary
+## Summary
 Summary of the contents of the Protein-Ligand Benchmark Dataset. It contains the available protein targets with corresponding PDB ID and number of ligands.
 
 | Target    |  PDB |# Ligands| # Edges |
@@ -12,3 +12,8 @@ Summary of the contents of the Protein-Ligand Benchmark Dataset. It contains the
 | mcl1      | 4HW3 | 25      | 24      |
 | cdk2      | 1H1Q | 10      | 9       |
 | p38       | 3FLY | 28      | 27      |
+
+
+## Note
+Note that `ligand_p38a_2ff` from P38 was excluded from the original dataset because of its ambigous stereochemistry.
+The experimental result for `ligand_p38a_2ff` is stored in `ligands.yml` as a record.
