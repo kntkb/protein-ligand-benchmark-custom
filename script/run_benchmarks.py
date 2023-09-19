@@ -268,6 +268,10 @@ is_reversed = args.reversed
 branch = args.revision
 local_run = args.local
 
+if os.path.exists('ligands.sdf') and os.path.exists("target.pdb"):
+    _logger.info(f'Found ligand and protein pdb file. Use local file.')
+    local_run = True
+
 if local_run:
     # FIXME: This isn't working we need something that takes a local edges.yaml file
     lig_a_name, lig_b_name = get_ligand_names_from_edge(edge_index, target, branch=branch)
